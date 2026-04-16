@@ -1,0 +1,61 @@
+{
+  "baseUrl": "https://dummyjson.com/",
+  "tests": [
+      {
+        "name": "Get request provides the righ status code",
+        "type": "status",
+        "request": "GET",
+        "endpoint": "/products",
+        "headers": null,
+        "body": null,
+        "assertions": [
+          {
+            "assertion": "status",
+            "expected": 200
+          }
+        ]
+      },
+        {
+          "name": "Get request returns the right body size",
+          "type": "status",
+          "request": "GET",
+          "endpoint": "/products",
+          "headers": null,
+          "body": null,
+          "assertions": [
+            {
+              "assertion": "body_has_size",
+              "expected": 44089
+            }
+      ]
+    },
+    {
+      "name": "Get request provides the righ status code",
+      "type": "status",
+      "request": "GET",
+      "endpoint": "/products",
+      "headers": null,
+      "body": null,
+      "assertions": [
+        {
+          "assertion": "status",
+          "expected": 200
+        }
+      ]
+    },
+    {
+      "name": "Get request returns the right body size",
+      "type": "status",
+      "request": "GET",
+      "endpoint": "/products",
+      "headers": null,
+      "body": null,
+      "assertions": [
+        {
+          "assertion": "body_has_size",
+          "expected": 44089
+        }
+      ]
+    }
+  ]
+}
