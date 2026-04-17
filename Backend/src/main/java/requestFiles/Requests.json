@@ -1,0 +1,104 @@
+{
+  "baseUrl": "https://dummyjson.com/",
+  "tests": [
+
+      {
+        "name": "Get request provides the righ status code",
+        "type": "status",
+        "request": "GET",
+        "endpoint": "/products",
+        "headers": null,
+        "body": null,
+        "assertions": [
+          {
+            "assertion": "status",
+            "expected": 200
+          }
+        ]
+      },
+
+    {
+        "name": "Login for user",
+        "type": "status",
+        "request": "POST",
+        "endpoint": "/user/login",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+
+          "username": "emilys",
+          "password": "emilyspass",
+          "expiresInMins": 90
+        },
+        "assertions": [
+          {
+            "assertion": "has_property_value",
+            "expected": {
+              "property": "firstName",
+              "value": "Emily"
+            }
+          },
+          {
+            "assertion": "body_contains_property",
+            "expected": "accessToken"
+          }
+        ]
+
+      },
+    {
+      "name": "Delete product successfully",
+      "type": "status",
+      "request": "DELETE",
+      "endpoint": "/products/1",
+      "headers": null,
+      "body": null,
+      "assertions": [
+        {
+          "assertion": "status",
+          "expected": 200
+        },
+        {
+          "assertion": "body_has_property",
+          "expected": "isDeleted"
+        },
+        {
+          "assertion": "has_property_value",
+          "expected": {
+            "property": "isDeleted",
+            "value": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Update product title successfully",
+      "type": "status",
+      "request": "PUT",
+      "endpoint": "/products/1",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "title": "Updated Product Name"
+      },
+      "assertions": [
+        {
+          "assertion": "status",
+          "expected": 200
+        },
+        {
+          "assertion": "has_property_value",
+          "expected": {
+            "property": "title",
+            "value": "Updated Product Name"
+          }
+        },
+        {
+          "assertion": "body_has_property",
+          "expected": "id"
+        }
+      ]
+    }
+    ]
+}
