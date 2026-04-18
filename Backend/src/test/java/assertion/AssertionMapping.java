@@ -18,7 +18,7 @@ public class AssertionMapping extends AssertionsMethods {
                 case "status":
                     statusCode(currentExpectedResult,request, response);
                     break;
-                case "body_contains_property":
+                case "body_has_property":
                     bodyContainsProperty(currentExpectedResult,request,response);
                     break;
                 case "body_has_size":

@@ -1,4 +1,4 @@
-package tests;
+package EntryPoint;
 
 import requestFiles.API_test;
 import requestFiles.JSONReader;

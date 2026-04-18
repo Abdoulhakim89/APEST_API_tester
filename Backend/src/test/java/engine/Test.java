@@ -1,19 +1,18 @@
-package running;
+package engine;
 
+import EntryPoint.BaseTest;
 import assertion.AssertionMapping;
 import io.restassured.response.Response;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 import requestFiles.TestRequest;
 import requests.DELETE_Request;
-import requests.GET_Requests;
+import requests.GET_Request;
 import requests.POST_Request;
 import requests.PUT_Request;
-import tests.BaseTest;
 
 import java.util.List;
 
-public class TestRunner extends BaseTest {
+public class Test extends BaseTest {
 
     @DataProvider(name = "test_list")
     public Object[][] provideTests(){
@@ -26,13 +25,13 @@ public class TestRunner extends BaseTest {
         return data;
     }
 
-    @Test(dataProvider = "test_list")
-    public void runAssertions(TestRequest testRequest) {
+    @org.testng.annotations.Test(dataProvider = "test_list")
+    public void testing__(TestRequest testRequest) {
          Response currentResponse;
 
-            switch (testRequest.request){
+            switch (testRequest.method){
                 case "GET":
-                    currentResponse = GET_Requests.sendGETRequest(testRequest);
+                    currentResponse = GET_Request.sendGETRequest(testRequest);
                     AssertionMapping.mapAssertion(testRequest.assertions,testRequest,currentResponse);
                 break;
 
@@ -42,11 +41,11 @@ public class TestRunner extends BaseTest {
                     break;
 
                 case "DELETE":
-                    currentResponse = DELETE_Request.SendDELETERequest(testRequest);
+                    currentResponse = DELETE_Request.sendDELETERequest(testRequest);
                     AssertionMapping.mapAssertion(testRequest.assertions,testRequest, currentResponse);
                     break;
                 case "PUT":
-                    currentResponse = PUT_Request.SendPUTRequest(testRequest);
+                    currentResponse = PUT_Request.sendPUTRequest(testRequest);
                     AssertionMapping.mapAssertion(testRequest.assertions,testRequest,currentResponse);
 
             }

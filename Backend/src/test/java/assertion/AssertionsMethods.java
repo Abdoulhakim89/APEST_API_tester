@@ -31,8 +31,6 @@ public class AssertionsMethods {
     public static void bodyHasPropertyValue(Map<String, Object> keyValuePair,TestRequest request, Response response){
         var property = keyValuePair.get("property");
         var value = keyValuePair.get("value");
-
-        logger(response,request);
         assertThat(response.path(property.toString()), equalTo(value));
     }
 
