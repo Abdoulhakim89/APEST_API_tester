@@ -12,7 +12,7 @@ import requests.PUT_Request;
 
 import java.util.List;
 
-public class Test extends BaseTest {
+public class TestEngine extends BaseTest {
 
     @DataProvider(name = "test_list")
     public Object[][] provideTests(){
