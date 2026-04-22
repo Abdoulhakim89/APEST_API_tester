@@ -1,23 +1,22 @@
 {
+  "suiteName": "My first test suite",
   "baseUrl": "https://dummyjson.com",
   "tests": [
 
     {
       "name": "Get all products returns 200",
-      "type": "status",
       "method": "GET",
       "endpoint": "/products",
       "headers": null,
       "body": null,
       "assertions": [
-        { "assertion": "status", "expected": 200 },
+        { "assertion": "status", "expected": 220 },
         { "assertion": "body_has_property", "expected": "products" }
       ]
     },
 
     {
       "name": "Get single product contains title",
-      "type": "status",
       "method": "GET",
       "endpoint": "/products/1",
       "headers": null,
@@ -30,7 +29,6 @@
 
     {
       "name": "Search product returns results",
-      "type": "status",
       "method": "GET",
       "endpoint": "/products/search?q=phone",
       "headers": null,
@@ -43,7 +41,6 @@
 
     {
       "name": "Create product successfully",
-      "type": "status",
       "method": "POST",
       "endpoint": "/products/add",
       "headers": {
@@ -67,7 +64,6 @@
 
     {
       "name": "Login user returns token",
-      "type": "status",
       "method": "POST",
       "endpoint": "/user/login",
       "headers": {
@@ -85,7 +81,6 @@
 
     {
       "name": "Update product title",
-      "type": "status",
       "method": "PUT",
       "endpoint": "/products/1",
       "headers": {
@@ -108,7 +103,6 @@
 
     {
       "name": "Delete product works",
-      "type": "status",
       "method": "DELETE",
       "endpoint": "/products/1",
       "headers": null,

@@ -1,5 +1,6 @@
 package EntryPoint;
 
+
 import requestFiles.API_test;
 import requestFiles.JSONReader;
 import io.restassured.specification.RequestSpecification;
@@ -30,7 +31,7 @@ public class BaseTest {
 
         if(request.body == null && (method.equals("POST") || method.equals("PUT")))
         {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Request method requires a body");
         }
         else if(request.body != null && (method.equals("POST") || method.equals("PUT")))
         {
