@@ -1,11 +1,12 @@
 package EntryPoint;
 
 
+import engine.TestEngine;
 import requestFiles.API_test;
-import requestFiles.JSONReader;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
+import requestFiles.RequestConfig;
 import requestFiles.TestRequest;
 
 import static io.restassured.RestAssured.with;
@@ -18,11 +19,12 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp(){
-
-        configurations = JSONReader.reader("src/main/java/requestFiles/Requests.json");
-
+//        configurations = JSONReader.reader("Backend/src/main/resources/Requests.json");
+        configurations = RequestConfig.config;
+        System.out.println(configurations.suiteName);
         requestSpecs = with()
                 .baseUri(configurations.baseUrl);
+
 
     }
     public static void setHeaders(TestRequest request, String method){

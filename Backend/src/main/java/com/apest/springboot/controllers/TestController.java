@@ -1,13 +1,31 @@
 package com.apest.springboot.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import engine.TestEngine;
+import org.springframework.web.bind.annotation.*;
+import org.testng.TestNG;
+import org.testng.xml.XmlSuite;
+import requestFiles.API_test;
+import requestFiles.RequestConfig;
+import responseFiles.API_Testresult;
+
+import java.io.ObjectInputFilter;
 
 @RestController
-@RequestMapping("/api")
-public class TestController {
+@RequestMapping("/")
+public class TestController  {
+    @PostMapping("/run")
+    public API_Testresult runTests(@RequestBody API_test requestBody){
+        RequestConfig.config = requestBody;
 
-//    @Autowired
+        TestEngine.testResults.clear();
+        TestNG testNG = new TestNG();
+        testNG.setTestClasses(new Class[]{TestEngine.class});
+        testNG.setParallel(XmlSuite.ParallelMode.METHODS);
+        testNG.setThreadCount(10);
+        testNG.run();
+
+        return new API_Testresult(TestEngine.suiteName,TestEngine.baseUrl, TestEngine.resultCollector());
+    }
+
 
 }

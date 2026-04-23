@@ -2,13 +2,8 @@ package engine;
 
 import EntryPoint.BaseTest;
 import assertion.AssertionMapping;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import requestFiles.TestRequest;
@@ -16,17 +11,17 @@ import requests.DELETE_Request;
 import requests.GET_Request;
 import requests.POST_Request;
 import requests.PUT_Request;
-import responseFiles.API_Testresult;
 import responseFiles.AssertionResults;
 import responseFiles.TestResult;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class TestEngine extends BaseTest {
-    public ArrayList<TestResult> testResults = new ArrayList<>();
+    public static ArrayList<TestResult> testResults = new ArrayList<>();
+    public static String suiteName;
+    public static String baseUrl;
 
 
     @DataProvider(name = "test_list")
@@ -42,7 +37,9 @@ public class TestEngine extends BaseTest {
     }
 
     @Test(dataProvider = "test_list")
-    public void testing__(TestRequest testRequest) throws JsonProcessingException{
+    public void testing__(TestRequest testRequest) {
+        suiteName = configurations.suiteName;
+        baseUrl = configurations.baseUrl;
 
          Response currentResponse;
          ArrayList<AssertionResults> currentAssertionsResults;
@@ -75,8 +72,8 @@ public class TestEngine extends BaseTest {
             failChecker(result);
         }
 
-        public ArrayList<TestResult> resultCollector(){
-        return this.testResults;
+        public static ArrayList<TestResult> resultCollector(){
+        return testResults;
         }
 
         public void failChecker(ArrayList<AssertionResults> assertions){
@@ -87,6 +84,7 @@ public class TestEngine extends BaseTest {
                 }
             }
         }
+
 
 
 

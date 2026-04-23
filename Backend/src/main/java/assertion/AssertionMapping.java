@@ -42,7 +42,7 @@ public class AssertionMapping extends AssertionsMethods {
             }
 
             }catch (AssertionError e){
-                    assertionResults.add(createAssertion(currentAssertion, false, e.getMessage()));
+                    assertionResults.add(createAssertion(currentAssertion, false, e.getMessage().replace("\r\n","")));
             }
 
 
