@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-24T15:23:24 CAT" name="Command line suite" finished-at="2026-04-24T15:23:36 CAT" duration-ms="11473">
+  <suite started-at="2026-04-24T15:44:49 CAT" name="Command line suite" finished-at="2026-04-24T15:44:57 CAT" duration-ms="7992">
     <groups>
     </groups>
-    <test started-at="2026-04-24T15:23:24 CAT" name="Command line test" finished-at="2026-04-24T15:23:36 CAT" duration-ms="11473">
+    <test started-at="2026-04-24T15:44:49 CAT" name="Command line test" finished-at="2026-04-24T15:44:57 CAT" duration-ms="7992">
       <class name="engine.TestEngine">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:24 CAT" name="setUp" finished-at="2026-04-24T15:23:25 CAT" duration-ms="948" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:engine.TestEngine@4f8b9494]" started-at="2026-04-24T15:44:49 CAT" name="setUp" finished-at="2026-04-24T15:44:49 CAT" duration-ms="527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:25 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:29 CAT" duration-ms="4243" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4f8b9494]" started-at="2026-04-24T15:44:49 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:44:52 CAT" duration-ms="2408" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:29 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:30 CAT" duration-ms="379" status="FAIL">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4f8b9494]" started-at="2026-04-24T15:44:52 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:44:52 CAT" duration-ms="273" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,90 +30,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Check failure: Expected: a string containing "ttle"     but: was "{"id":1,"title":"Essence Mascara Lash Princess","description":"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.","category":"beauty","price":9.99,"discountPercentage":10.48,"rating":2.56,"stock":99,"tags":["beauty","mascara"],"brand":"Essence","sku":"BEA-ESS-ESS-001","weight":4,"dimensions":{"width":15.14,"height":13.08,"depth":22.99},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"},{"rating":4,"comment":"Very satisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lucas Gordon","reviewerEmail":"lucas.gordon@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":48,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5784719087687","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"}"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Check failure: Expected: a string containing "ttle"     but: was "{"id":1,"title":"Essence Mascara Lash Princess","description":"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.","category":"beauty","price":9.99,"discountPercentage":10.48,"rating":2.56,"stock":99,"tags":["beauty","mascara"],"brand":"Essence","sku":"BEA-ESS-ESS-001","weight":4,"dimensions":{"width":15.14,"height":13.08,"depth":22.99},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"},{"rating":4,"comment":"Very satisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lucas Gordon","reviewerEmail":"lucas.gordon@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":48,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5784719087687","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"}"
-at org.testng.Assert.fail(Assert.java:111)
-at engine.TestEngine.failChecker(TestEngine.java:82)
-at engine.TestEngine.taskRunner(TestEngine.java:72)
-at engine.TestEngine.testing__(TestEngine.java:50)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at com.apest.springboot.controllers.TestController.runTests(TestController.java:24)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
-at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
-at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
-at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
-at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
-at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
-at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
-at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
-at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
-at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
-at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
-at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
-at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
-at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
-at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
-at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
-at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
-at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
-at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
-at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
-at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
-at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
-at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
-at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
-at java.base/java.lang.Thread.run(Thread.java:1474)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:30 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:31 CAT" duration-ms="1386" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4f8b9494]" started-at="2026-04-24T15:44:52 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:44:53 CAT" duration-ms="1176" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,7 +44,7 @@ at java.base/java.lang.Thread.run(Thread.java:1474)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:31 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:34 CAT" duration-ms="2620" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4f8b9494]" started-at="2026-04-24T15:44:53 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:44:54 CAT" duration-ms="1227" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,7 +55,7 @@ at java.base/java.lang.Thread.run(Thread.java:1474)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:34 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:34 CAT" duration-ms="613" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4f8b9494]" started-at="2026-04-24T15:44:54 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:44:55 CAT" duration-ms="1237" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,7 +66,7 @@ at java.base/java.lang.Thread.run(Thread.java:1474)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:34 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:35 CAT" duration-ms="586" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4f8b9494]" started-at="2026-04-24T15:44:55 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:44:56 CAT" duration-ms="542" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -157,7 +77,7 @@ at java.base/java.lang.Thread.run(Thread.java:1474)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:35 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:36 CAT" duration-ms="602" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4f8b9494]" started-at="2026-04-24T15:44:56 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:44:57 CAT" duration-ms="538" status="PASS">
           <params>
             <param index="0">
               <value>

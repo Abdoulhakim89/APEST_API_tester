@@ -9,63 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,473</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,992</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">engine.TestEngine</td><td><a href="#m0">testing__</a></td><td rowspan="1">1777037009881</td><td rowspan="1">379</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">engine.TestEngine</td><td><a href="#m1">testing__</a></td><td rowspan="6">1777037011649</td><td rowspan="6">2620</td></tr><tr class="passedeven"><td><a href="#m2">testing__</a></td></tr><tr class="passedeven"><td><a href="#m3">testing__</a></td></tr><tr class="passedeven"><td><a href="#m4">testing__</a></td></tr><tr class="passedeven"><td><a href="#m5">testing__</a></td></tr><tr class="passedeven"><td><a href="#m6">testing__</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">engine.TestEngine</td><td><a href="#m0">testing__</a></td><td rowspan="7">1777038296491</td><td rowspan="7">538</td></tr><tr class="passedeven"><td><a href="#m1">testing__</a></td></tr><tr class="passedeven"><td><a href="#m2">testing__</a></td></tr><tr class="passedeven"><td><a href="#m3">testing__</a></td></tr><tr class="passedeven"><td><a href="#m4">testing__</a></td></tr><tr class="passedeven"><td><a href="#m5">testing__</a></td></tr><tr class="passedeven"><td><a href="#m6">testing__</a></td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Get single product contains title</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Check failure: Expected: a string containing &quot;ttle&quot;     but: was &quot;{&quot;id&quot;:1,&quot;title&quot;:&quot;Essence Mascara Lash Princess&quot;,&quot;description&quot;:&quot;The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.&quot;,&quot;category&quot;:&quot;beauty&quot;,&quot;price&quot;:9.99,&quot;discountPercentage&quot;:10.48,&quot;rating&quot;:2.56,&quot;stock&quot;:99,&quot;tags&quot;:[&quot;beauty&quot;,&quot;mascara&quot;],&quot;brand&quot;:&quot;Essence&quot;,&quot;sku&quot;:&quot;BEA-ESS-ESS-001&quot;,&quot;weight&quot;:4,&quot;dimensions&quot;:{&quot;width&quot;:15.14,&quot;height&quot;:13.08,&quot;depth&quot;:22.99},&quot;warrantyInformation&quot;:&quot;1 week warranty&quot;,&quot;shippingInformation&quot;:&quot;Ships in 3-5 business days&quot;,&quot;availabilityStatus&quot;:&quot;In Stock&quot;,&quot;reviews&quot;:[{&quot;rating&quot;:3,&quot;comment&quot;:&quot;Would not recommend!&quot;,&quot;date&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;reviewerName&quot;:&quot;Eleanor Collins&quot;,&quot;reviewerEmail&quot;:&quot;eleanor.collins@x.dummyjson.com&quot;},{&quot;rating&quot;:4,&quot;comment&quot;:&quot;Very satisfied!&quot;,&quot;date&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;reviewerName&quot;:&quot;Lucas Gordon&quot;,&quot;reviewerEmail&quot;:&quot;lucas.gordon@x.dummyjson.com&quot;},{&quot;rating&quot;:5,&quot;comment&quot;:&quot;Highly impressed!&quot;,&quot;date&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;reviewerName&quot;:&quot;Eleanor Collins&quot;,&quot;reviewerEmail&quot;:&quot;eleanor.collins@x.dummyjson.com&quot;}],&quot;returnPolicy&quot;:&quot;No return policy&quot;,&quot;minimumOrderQuantity&quot;:48,&quot;meta&quot;:{&quot;createdAt&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;updatedAt&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;barcode&quot;:&quot;5784719087687&quot;,&quot;qrCode&quot;:&quot;https://cdn.dummyjson.com/public/qr-code.png&quot;},&quot;images&quot;:[&quot;https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp&quot;],&quot;thumbnail&quot;:&quot;https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp&quot;}&quot;
-	at engine.TestEngine.failChecker(TestEngine.java:82)
-	at engine.TestEngine.taskRunner(TestEngine.java:72)
-	at engine.TestEngine.testing__(TestEngine.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at com.apest.springboot.controllers.TestController.runTests(TestController.java:24)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Create product successfully</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Login user returns token</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Update product title</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Delete product works</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Search product returns results</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Get all products returns 200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Command line test</h2><h3 id="m0">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Delete product works</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Get all products returns 200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Search product returns results</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Get single product contains title</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Create product successfully</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Update product title</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">engine.TestEngine#testing__</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Login user returns token</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
