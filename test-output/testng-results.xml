@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-24T14:47:25 CAT" name="Command line suite" finished-at="2026-04-24T14:47:29 CAT" duration-ms="3569">
+  <suite started-at="2026-04-24T15:23:24 CAT" name="Command line suite" finished-at="2026-04-24T15:23:36 CAT" duration-ms="11473">
     <groups>
     </groups>
-    <test started-at="2026-04-24T14:47:25 CAT" name="Command line test" finished-at="2026-04-24T14:47:29 CAT" duration-ms="3569">
+    <test started-at="2026-04-24T15:23:24 CAT" name="Command line test" finished-at="2026-04-24T15:23:36 CAT" duration-ms="11473">
       <class name="engine.TestEngine">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:engine.TestEngine@65d3b037]" started-at="2026-04-24T14:47:25 CAT" name="setUp" finished-at="2026-04-24T14:47:25 CAT" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:24 CAT" name="setUp" finished-at="2026-04-24T15:23:25 CAT" duration-ms="948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@65d3b037]" started-at="2026-04-24T14:47:25 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T14:47:26 CAT" duration-ms="320" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:25 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:29 CAT" duration-ms="4243" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@65d3b037]" started-at="2026-04-24T14:47:26 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T14:47:26 CAT" duration-ms="316" status="FAIL">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:29 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:30 CAT" duration-ms="379" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -113,7 +113,7 @@ at java.base/java.lang.Thread.run(Thread.java:1474)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@65d3b037]" started-at="2026-04-24T14:47:26 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T14:47:26 CAT" duration-ms="542" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:30 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:31 CAT" duration-ms="1386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,7 +124,7 @@ at java.base/java.lang.Thread.run(Thread.java:1474)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@65d3b037]" started-at="2026-04-24T14:47:26 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T14:47:27 CAT" duration-ms="643" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:31 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:34 CAT" duration-ms="2620" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@ at java.base/java.lang.Thread.run(Thread.java:1474)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@65d3b037]" started-at="2026-04-24T14:47:27 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T14:47:28 CAT" duration-ms="593" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:34 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:34 CAT" duration-ms="613" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,7 +146,7 @@ at java.base/java.lang.Thread.run(Thread.java:1474)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@65d3b037]" started-at="2026-04-24T14:47:28 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T14:47:28 CAT" duration-ms="540" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:34 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:35 CAT" duration-ms="586" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -157,7 +157,7 @@ at java.base/java.lang.Thread.run(Thread.java:1474)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@65d3b037]" started-at="2026-04-24T14:47:28 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T14:47:29 CAT" duration-ms="610" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@6074bcd8]" started-at="2026-04-24T15:23:35 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T15:23:36 CAT" duration-ms="602" status="PASS">
           <params>
             <param index="0">
               <value>
