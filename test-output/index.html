@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Command_line_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Get all products returns 200)">testing__(Get all products returns 200)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Get single product contains title)">testing__(Get single product contains title)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
@@ -117,7 +117,17 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Get single product contains title)">testing__(Get single product contains title)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Delete product works)">testing__(Delete product works)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Get all products returns 200)">testing__(Get all products returns 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Login user returns token)">testing__(Login user returns token)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,16 +138,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Create product successfully)">testing__(Create product successfully)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Login user returns token)">testing__(Login user returns token)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Delete product works)">testing__(Delete product works)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -165,20 +165,58 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testing__(Get all products returns 200)">
-                  </a> <!-- testing__(Get all products returns 200) -->
+                  <a name="testing__(Get single product contains title)">
+                  </a> <!-- testing__(Get single product contains title) -->
                   <span class="method-name">testing__</span>
-                  <span class="parameters">(Get all products returns 200)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Check failure: Expected: &lt;220&gt;     but: was &lt;200&gt;
+                  <span class="parameters">(Get single product contains title)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Check failure: Expected: a string containing &quot;ttle&quot;     but: was &quot;{&quot;id&quot;:1,&quot;title&quot;:&quot;Essence Mascara Lash Princess&quot;,&quot;description&quot;:&quot;The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.&quot;,&quot;category&quot;:&quot;beauty&quot;,&quot;price&quot;:9.99,&quot;discountPercentage&quot;:10.48,&quot;rating&quot;:2.56,&quot;stock&quot;:99,&quot;tags&quot;:[&quot;beauty&quot;,&quot;mascara&quot;],&quot;brand&quot;:&quot;Essence&quot;,&quot;sku&quot;:&quot;BEA-ESS-ESS-001&quot;,&quot;weight&quot;:4,&quot;dimensions&quot;:{&quot;width&quot;:15.14,&quot;height&quot;:13.08,&quot;depth&quot;:22.99},&quot;warrantyInformation&quot;:&quot;1 week warranty&quot;,&quot;shippingInformation&quot;:&quot;Ships in 3-5 business days&quot;,&quot;availabilityStatus&quot;:&quot;In Stock&quot;,&quot;reviews&quot;:[{&quot;rating&quot;:3,&quot;comment&quot;:&quot;Would not recommend!&quot;,&quot;date&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;reviewerName&quot;:&quot;Eleanor Collins&quot;,&quot;reviewerEmail&quot;:&quot;eleanor.collins@x.dummyjson.com&quot;},{&quot;rating&quot;:4,&quot;comment&quot;:&quot;Very satisfied!&quot;,&quot;date&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;reviewerName&quot;:&quot;Lucas Gordon&quot;,&quot;reviewerEmail&quot;:&quot;lucas.gordon@x.dummyjson.com&quot;},{&quot;rating&quot;:5,&quot;comment&quot;:&quot;Highly impressed!&quot;,&quot;date&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;reviewerName&quot;:&quot;Eleanor Collins&quot;,&quot;reviewerEmail&quot;:&quot;eleanor.collins@x.dummyjson.com&quot;}],&quot;returnPolicy&quot;:&quot;No return policy&quot;,&quot;minimumOrderQuantity&quot;:48,&quot;meta&quot;:{&quot;createdAt&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;updatedAt&quot;:&quot;2025-04-30T09:41:02.053Z&quot;,&quot;barcode&quot;:&quot;5784719087687&quot;,&quot;qrCode&quot;:&quot;https://cdn.dummyjson.com/public/qr-code.png&quot;},&quot;images&quot;:[&quot;https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp&quot;],&quot;thumbnail&quot;:&quot;https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp&quot;}&quot;
 	at engine.TestEngine.failChecker(TestEngine.java:82)
 	at engine.TestEngine.taskRunner(TestEngine.java:72)
 	at engine.TestEngine.testing__(TestEngine.java:50)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.apest.springboot.controllers.TestController.runTests(TestController.java:24)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 12 stack frames
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -192,10 +230,26 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testing__(Get single product contains title)">
-                  </a> <!-- testing__(Get single product contains title) -->
+                  <a name="testing__(Delete product works)">
+                  </a> <!-- testing__(Delete product works) -->
                   <span class="method-name">testing__</span>
-                  <span class="parameters">(Get single product contains title)</span>
+                  <span class="parameters">(Delete product works)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testing__(Get all products returns 200)">
+                  </a> <!-- testing__(Get all products returns 200) -->
+                  <span class="method-name">testing__</span>
+                  <span class="parameters">(Get all products returns 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testing__(Login user returns token)">
+                  </a> <!-- testing__(Login user returns token) -->
+                  <span class="method-name">testing__</span>
+                  <span class="parameters">(Login user returns token)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -216,22 +270,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testing__(Login user returns token)">
-                  </a> <!-- testing__(Login user returns token) -->
-                  <span class="method-name">testing__</span>
-                  <span class="parameters">(Login user returns token)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testing__(Delete product works)">
-                  </a> <!-- testing__(Delete product works) -->
-                  <span class="method-name">testing__</span>
-                  <span class="parameters">(Delete product works)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testing__(Update product title)">
                   </a> <!-- testing__(Update product title) -->
                   <span class="method-name">testing__</span>
@@ -248,8 +286,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;10&quot; parallel=&quot;methods&quot; name=&quot;Command line suite&quot;&gt;
-  &lt;test thread-count=&quot;10&quot; parallel=&quot;methods&quot; name=&quot;Command line test&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;engine.TestEngine&quot;/&gt;
     &lt;/classes&gt;
@@ -295,36 +333,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testing__')
 data.setCell(0, 2, 'engine.TestEngine')
-data.setCell(0, 3, 1804);
+data.setCell(0, 3, 643);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testing__')
 data.setCell(1, 2, 'engine.TestEngine')
-data.setCell(1, 3, 929);
+data.setCell(1, 3, 610);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testing__')
 data.setCell(2, 2, 'engine.TestEngine')
-data.setCell(2, 3, 697);
+data.setCell(2, 3, 593);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testing__')
 data.setCell(3, 2, 'engine.TestEngine')
-data.setCell(3, 3, 671);
+data.setCell(3, 3, 542);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testing__')
 data.setCell(4, 2, 'engine.TestEngine')
-data.setCell(4, 3, 628);
+data.setCell(4, 3, 540);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testing__')
 data.setCell(5, 2, 'engine.TestEngine')
-data.setCell(5, 3, 551);
+data.setCell(5, 3, 320);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testing__')
 data.setCell(6, 2, 'engine.TestEngine')
-data.setCell(6, 3, 283);
+data.setCell(6, 3, 316);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -356,34 +394,34 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testing__(Get all products returns 200)</span>
-                <span class="method-start">2 ms</span>
+                <span class="method-start">5 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testing__(Get single product contains title)</span>
-                <span class="method-start">291 ms</span>
+                <span class="method-start">325 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testing__(Search product returns results)</span>
-                <span class="method-start">988 ms</span>
+                <span class="method-start">641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testing__(Create product successfully)</span>
-                <span class="method-start">1917 ms</span>
+                <span class="method-start">1183 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testing__(Login user returns token)</span>
-                <span class="method-start">2468 ms</span>
+                <span class="method-start">1826 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testing__(Update product title)</span>
-                <span class="method-start">3139 ms</span>
+                <span class="method-start">2419 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testing__(Delete product works)</span>
-                <span class="method-start">3769 ms</span>
+                <span class="method-start">2959 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

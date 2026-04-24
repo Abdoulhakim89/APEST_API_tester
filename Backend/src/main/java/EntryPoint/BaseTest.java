@@ -6,6 +6,7 @@ import requestFiles.API_test;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
+import requestFiles.JSONReader;
 import requestFiles.RequestConfig;
 import requestFiles.TestRequest;
 
@@ -19,7 +20,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp(){
-//        configurations = JSONReader.reader("Backend/src/main/resources/Requests.json");
+//        configurations = JSONReader.reader("src/main/java/requestFiles/Requests.json");
         configurations = RequestConfig.config;
         System.out.println(configurations.suiteName);
         requestSpecs = with()
