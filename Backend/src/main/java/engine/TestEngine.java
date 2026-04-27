@@ -14,6 +14,7 @@ import requests.PUT_Request;
 import responseFiles.AssertionResults;
 import responseFiles.TestResult;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -50,9 +51,15 @@ public class TestEngine extends BaseTest {
                     taskRunner(testRequest,currentAssertionsResults, currentResponse);
                 break;
                 case "POST":
+                    try {
+
                     currentResponse = POST_Request.sendPOSTRequest(testRequest);
                     currentAssertionsResults = AssertionMapping.mapAssertion(testRequest.assertions,testRequest,currentResponse);
                     taskRunner(testRequest,currentAssertionsResults, currentResponse);
+
+                    } catch (IllegalArgumentException e){
+                        voidBodyHandler(testRequest,e);
+                    }
                     break;
                 case "DELETE":
                     currentResponse = DELETE_Request.sendDELETERequest(testRequest);
@@ -60,9 +67,13 @@ public class TestEngine extends BaseTest {
                     taskRunner(testRequest,currentAssertionsResults, currentResponse);
                     break;
                 case "PUT":
-                    currentResponse = PUT_Request.sendPUTRequest(testRequest);
-                    currentAssertionsResults = AssertionMapping.mapAssertion(testRequest.assertions,testRequest,currentResponse);
-                    taskRunner(testRequest,currentAssertionsResults, currentResponse);
+                    try {
+                        currentResponse = PUT_Request.sendPUTRequest(testRequest);
+                        currentAssertionsResults = AssertionMapping.mapAssertion(testRequest.assertions,testRequest,currentResponse);
+                        taskRunner(testRequest,currentAssertionsResults, currentResponse);
+                    } catch (IllegalArgumentException e){
+                        voidBodyHandler(testRequest, e);
+                    }
                     break;
             }
         }
@@ -70,6 +81,12 @@ public class TestEngine extends BaseTest {
         public void taskRunner(TestRequest testRequest, ArrayList<AssertionResults> result, Response response){
             testResults.add(new TestResult(testRequest.name, result, response.getBody().as(Map.class)));
             failChecker(result);
+        }
+        public void voidBodyHandler(TestRequest testRequest, Exception e){
+            ArrayList<AssertionResults> errorResult = new ArrayList<>();
+            errorResult.add(new AssertionResults("Request Validation", false, e.getMessage()));
+            testResults.add(new TestResult(testRequest.name, errorResult,null));
+            Assert.fail(e.getMessage());
         }
 
         public static ArrayList<TestResult> resultCollector(){

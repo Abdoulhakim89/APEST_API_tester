@@ -5,7 +5,7 @@
     <classes>
       <class name="engine.TestEngine">
         <methods>
-          <include name="testing__"/>
+          <include name="testing__" invocation-numbers="0 1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- engine.TestEngine -->

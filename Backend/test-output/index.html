@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Get all products returns 200)">testing__(Get all products returns 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Create product successfully)">testing__(Create product successfully)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,36 +120,6 @@
                       <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
                     <div class="method-list-content passed suite-Command_line_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Delete product works)">testing__(Delete product works)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Create product successfully)">testing__(Create product successfully)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Search product returns results)">testing__(Search product returns results)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Get all products returns 200)">testing__(Get all products returns 200)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Get single product contains title)">testing__(Get single product contains title)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Login user returns token)">testing__(Login user returns token)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="engine.TestEngine" class="method navigator-link" hash-for-method="testing__(Update product title)">testing__(Update product title)</a> <!-- method navigator-link -->
@@ -148,18 +137,86 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-passed">
+          <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">engine.TestEngine</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testing__(Delete product works)">
-                  </a> <!-- testing__(Delete product works) -->
+                  <a name="testing__(Get all products returns 200)">
+                  </a> <!-- testing__(Get all products returns 200) -->
                   <span class="method-name">testing__</span>
-                  <span class="parameters">(Delete product works)</span>
+                  <span class="parameters">(Get all products returns 200)</span>
+                  <div class="stack-trace">tools.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.LinkedHashMap&lt;java.lang.Object,java.lang.Object&gt;` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #UNKNOWN]
+	at tools.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at tools.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1863)
+	at tools.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1659)
+	at tools.jackson.databind.deser.std.StdDeserializer._deserializeFromArray(StdDeserializer.java:199)
+	at tools.jackson.databind.deser.jdk.MapDeserializer.deserialize(MapDeserializer.java:436)
+	at tools.jackson.databind.deser.jdk.MapDeserializer.deserialize(MapDeserializer.java:30)
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:266)
+	at tools.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2639)
+	at tools.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:1586)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson3ObjectDeserializer.deserialize(JsonPathJackson3ObjectDeserializer.java:26)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.mapping.Jackson3Mapper.deserialize(Jackson3Mapper.groovy:59)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson3(ObjectMapping.groovy:273)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:233)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:174)
+	at engine.TestEngine.taskRunner(TestEngine.java:71)
+	at engine.TestEngine.testing__(TestEngine.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.apest.springboot.controllers.TestController.runTests(TestController.java:24)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -168,40 +225,65 @@
                   </a> <!-- testing__(Create product successfully) -->
                   <span class="method-name">testing__</span>
                   <span class="parameters">(Create product successfully)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Check failure: Expected: &quot;foo&quot;     but: was &quot;My product&quot;
+	at engine.TestEngine.failChecker(TestEngine.java:82)
+	at engine.TestEngine.taskRunner(TestEngine.java:72)
+	at engine.TestEngine.testing__(TestEngine.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at com.apest.springboot.controllers.TestController.runTests(TestController.java:24)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testing__(Search product returns results)">
-                  </a> <!-- testing__(Search product returns results) -->
-                  <span class="method-name">testing__</span>
-                  <span class="parameters">(Search product returns results)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testing__(Get all products returns 200)">
-                  </a> <!-- testing__(Get all products returns 200) -->
-                  <span class="method-name">testing__</span>
-                  <span class="parameters">(Get all products returns 200)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testing__(Get single product contains title)">
-                  </a> <!-- testing__(Get single product contains title) -->
-                  <span class="method-name">testing__</span>
-                  <span class="parameters">(Get single product contains title)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testing__(Login user returns token)">
-                  </a> <!-- testing__(Login user returns token) -->
-                  <span class="method-name">testing__</span>
-                  <span class="parameters">(Login user returns token)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">engine.TestEngine</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="testing__(Update product title)">
@@ -263,40 +345,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testing__')
 data.setCell(0, 2, 'engine.TestEngine')
-data.setCell(0, 3, 2690);
+data.setCell(0, 3, 578);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testing__')
 data.setCell(1, 2, 'engine.TestEngine')
-data.setCell(1, 3, 1400);
+data.setCell(1, 3, 560);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testing__')
 data.setCell(2, 2, 'engine.TestEngine')
-data.setCell(2, 3, 1271);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testing__')
-data.setCell(3, 2, 'engine.TestEngine')
-data.setCell(3, 3, 1225);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testing__')
-data.setCell(4, 2, 'engine.TestEngine')
-data.setCell(4, 3, 596);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testing__')
-data.setCell(5, 2, 'engine.TestEngine')
-data.setCell(5, 3, 550);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testing__')
-data.setCell(6, 2, 'engine.TestEngine')
-data.setCell(6, 3, 362);
+data.setCell(2, 3, 292);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -328,32 +394,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testing__(Get all products returns 200)</span>
-                <span class="method-start">497 ms</span>
+                <span class="method-start">3 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testing__(Get single product contains title)</span>
-                <span class="method-start">3189 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testing__(Search product returns results)</span>
-                <span class="method-start">3553 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testing__(Create product successfully)</span>
-                <span class="method-start">4825 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testing__(Login user returns token)</span>
-                <span class="method-start">6225 ms</span>
+                <span class="method-start">295 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testing__(Update product title)</span>
-                <span class="method-start">6822 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testing__(Delete product works)</span>
-                <span class="method-start">8047 ms</span>
+                <span class="method-start">873 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

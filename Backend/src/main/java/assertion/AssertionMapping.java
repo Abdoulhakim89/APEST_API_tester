@@ -25,19 +25,19 @@ public class AssertionMapping extends AssertionsMethods {
             try{
             switch (currentAssertion){
                 case "status":
-                    statusCode(currentExpectedResult,request, response);
+                    statusCode(currentExpectedResult, response);
                     assertionResults.add(createAssertion(currentAssertion, true, "Status code "+ currentExpectedResult +" matched"));
                     break;
                 case "body_has_property":
-                    bodyContainsProperty(currentExpectedResult,request,response);
+                    bodyContainsProperty(currentExpectedResult,response);
                     assertionResults.add(createAssertion(currentAssertion, true, "Property "+ currentExpectedResult +" found"));
                     break;
                 case "body_has_size":
-                    bodyHasSize(currentExpectedResult,request,response);
+                    bodyHasSize(currentExpectedResult,response);
                     assertionResults.add(createAssertion(currentAssertion, true, "Body size "+ currentExpectedResult +" matched"));
                     break;
                 case "has_property_value":
-                    bodyHasPropertyValue((Map<String, Object>) currentExpectedResult,request,response);
+                    bodyHasPropertyValue((Map<String, Object>) currentExpectedResult,response);
                     assertionResults.add(createAssertion(currentAssertion, true, "Key value pair found"));
             }
 

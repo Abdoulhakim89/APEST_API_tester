@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-24T16:36:23 CAT" name="Command line suite" finished-at="2026-04-24T16:36:32 CAT" duration-ms="8417">
+  <suite started-at="2026-04-27T11:29:24 CAT" name="Command line suite" finished-at="2026-04-27T11:29:25 CAT" duration-ms="980">
     <groups>
     </groups>
-    <test started-at="2026-04-24T16:36:23 CAT" name="Command line test" finished-at="2026-04-24T16:36:32 CAT" duration-ms="8417">
+    <test started-at="2026-04-27T11:29:24 CAT" name="Command line test" finished-at="2026-04-27T11:29:25 CAT" duration-ms="980">
       <class name="engine.TestEngine">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:engine.TestEngine@db483df]" started-at="2026-04-24T16:36:23 CAT" name="setUp" finished-at="2026-04-24T16:36:24 CAT" duration-ms="559" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:engine.TestEngine@4715d6d8]" started-at="2026-04-27T11:29:24 CAT" name="setUp" finished-at="2026-04-27T11:29:24 CAT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@db483df]" started-at="2026-04-24T16:36:24 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T16:36:26 CAT" duration-ms="2501" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4715d6d8]" started-at="2026-04-27T11:29:24 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-27T11:29:24 CAT" duration-ms="332" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,29 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@db483df]" started-at="2026-04-24T16:36:26 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T16:36:27 CAT" duration-ms="319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Get single product contains title]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@db483df]" started-at="2026-04-24T16:36:27 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T16:36:28 CAT" duration-ms="1258" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Search product returns results]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@db483df]" started-at="2026-04-24T16:36:28 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T16:36:29 CAT" duration-ms="1401" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4715d6d8]" started-at="2026-04-27T11:29:24 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-27T11:29:25 CAT" duration-ms="632" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -52,21 +30,90 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Check failure: Expected: "foo"     but: was "My product"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Check failure: Expected: "foo"     but: was "My product"
+at org.testng.Assert.fail(Assert.java:111)
+at engine.TestEngine.failChecker(TestEngine.java:99)
+at engine.TestEngine.taskRunner(TestEngine.java:83)
+at engine.TestEngine.testing__(TestEngine.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.apest.springboot.controllers.TestController.runTests(TestController.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@db483df]" started-at="2026-04-24T16:36:29 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T16:36:31 CAT" duration-ms="1230" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login user returns token]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@db483df]" started-at="2026-04-24T16:36:31 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T16:36:31 CAT" duration-ms="561" status="PASS">
+        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@4715d6d8]" started-at="2026-04-27T11:29:25 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-27T11:29:25 CAT" duration-ms="6" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -74,17 +121,85 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testing__ -->
-        <test-method signature="testing__(requestFiles.TestRequest)[pri:0, instance:engine.TestEngine@db483df]" started-at="2026-04-24T16:36:31 CAT" name="testing__" data-provider="test_list" finished-at="2026-04-24T16:36:32 CAT" duration-ms="555" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Delete product works]]>
-              </value>
-            </param>
-          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[PUT request method requires a body]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: PUT request method requires a body
+at org.testng.Assert.fail(Assert.java:111)
+at engine.TestEngine.voidBodyHandler(TestEngine.java:89)
+at engine.TestEngine.testing__(TestEngine.java:75)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.apest.springboot.controllers.TestController.runTests(TestController.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing__ -->

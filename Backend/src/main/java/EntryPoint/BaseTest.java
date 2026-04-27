@@ -28,13 +28,13 @@ public class BaseTest {
 
 
     }
-    public static void setHeaders(TestRequest request, String method){
+    public static void setHeaders(TestRequest request, String method)throws IllegalArgumentException{
 
         if(request.headers != null) requestSpecs.headers(request.headers);
 
         if(request.body == null && (method.equals("POST") || method.equals("PUT")))
         {
-            throw new IllegalArgumentException("Request method requires a body");
+            throw new IllegalArgumentException(method+" request method requires a body");
         }
         else if(request.body != null && (method.equals("POST") || method.equals("PUT")))
         {
