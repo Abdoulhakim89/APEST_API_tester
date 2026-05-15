@@ -1,15 +1,10 @@
 import TestCase from "./TestCase";
 
-const addTest =()=>{
-    let form = document.getElementById("test_case");
-    form.append(<TestCase></TestCase>);
-}
-const deleteTest=()=> {
-    // let form = document.getElementById("test_case");
-    // form.removeChild()
-}
 
 function TestForm(){
+
+
+    
     return(
     <> 
         <div className="py-8 px-6">
@@ -22,18 +17,18 @@ function TestForm(){
                 <TestCase/>
             </form>
 
-            <div className="flex gap-4 my-4 py-4">
+            {/* <div className="flex gap-4 my-4 py-4">
                 <button 
-                onClick={addTest}
+                // onClick={}
                 className="text-black p-2 rounded-2xl font-bold border-b-3  hover:text-gray-400 cursor-pointer">
                     Add Test Case
                 </button>
                 <button 
-                onClick={deleteTest}
+                // onClick={deleteTest}
                 className="text-red-700 p-2 rounded-2xl font-bold border-b-3  hover:text-gray-400 cursor-pointer">
                     Delete Test Case
                 </button>
-            </div>
+            </div> */}
             
         </div>
     </>
